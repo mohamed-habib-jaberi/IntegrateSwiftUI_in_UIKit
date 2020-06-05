@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class BooksTableViewController: UITableViewController {
 
@@ -14,8 +15,7 @@ class BooksTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print("sss")
+       
     }
 
     // MARK: - Table view data source
@@ -33,5 +33,13 @@ class BooksTableViewController: UITableViewController {
         return cell
     }
     
-   
+    // Show Detail View
+    @IBSegueAction func showBooks(_ coder: NSCoder) -> UIViewController? {
+        
+        let selectedRow = tableView.indexPathForSelectedRow!.row
+        let selectesIndex = books[selectedRow]
+        
+        return UIHostingController(coder: coder, rootView: BookDetailView(book: selectesIndex) )
+    }
+    
 }

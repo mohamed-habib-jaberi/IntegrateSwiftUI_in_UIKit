@@ -48,6 +48,7 @@
                                 <connections>
                                     <outlet property="bookImageView" destination="RlW-Zn-22U" id="l8o-Qx-sJL"/>
                                     <outlet property="bookLabel" destination="NKg-CX-jqu" id="NjO-vN-MKd"/>
+                                    <segue destination="Ec9-oZ-6ef" kind="show" destinationCreationSelector="showBooks:" id="EIN-A3-tLL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,6 +62,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b43-Sj-P4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1028.985507246377" y="76.339285714285708"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="mra-Ml-8Cw">
+            <objects>
+                <hostingController id="Ec9-oZ-6ef" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jwk-ma-8NV"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9y-Di-bmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="79"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zw0-Qk-mAU">
